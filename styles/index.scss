@@ -1,11 +1,21 @@
 @import url("normalize.css");
 
+/*  variable  */
+$bg-primary: #E4FAF4;
+
 body {
   font-size: 16px;
   background-color: white;
 }
 
 .layout {
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+
+/* --HEADER-- */ 
+.top-line {
+  height: 30px;
+  background-color: $bg-primary;
 }
