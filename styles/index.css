@@ -1,4 +1,10 @@
+@import url("normalize.css");
 body {
-  background-color: blue;
+  font-size: 16px;
+  background-color: white;
+}
+
+.layout {
+  max-width: 1440px;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,5 +1,10 @@
-$color: blue;
+@import url("normalize.css");
 
 body {
-  background-color: $color;
+  font-size: 16px;
+  background-color: white;
+}
+
+.layout {
+  max-width: 1440px;
 }
