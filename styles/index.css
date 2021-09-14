@@ -12,7 +12,13 @@ body {
 
 /* --HEADER-- */
 .top-line {
+  width: 100%;
   height: 30px;
   background-color: #E4FAF4;
+}
+
+.top-line__content {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=index.css.map */

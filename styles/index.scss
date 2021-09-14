@@ -16,6 +16,12 @@ body {
 
 /* --HEADER-- */ 
 .top-line {
+  width: 100%;
   height: 30px;
   background-color: $bg-primary;
+
+  &__content {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
