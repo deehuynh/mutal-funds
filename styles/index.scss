@@ -2,10 +2,12 @@
 
 /*  variable  */
 $bg-primary: #E4FAF4;
+$c-primary: #222222;
 
 body {
   font-size: 16px;
   background-color: white;
+  color: $c-primary;
 }
 
 .layout {
