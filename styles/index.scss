@@ -224,7 +224,7 @@ body {
     }
 
     margin: 0;
-    padding: 0 15px;
+    padding: 0 20px;
     box-sizing: border-box;
     box-shadow: 0 10px 30px rgba(0,0,0,0.03);
   }
@@ -268,5 +268,19 @@ body {
       color: #222222;
       opacity: .5;
     }
+  }
+}
+
+.search-bar {
+  margin: 20px;
+}
+
+.search-mobile {
+  display: none;
+
+  @include media (460px) {
+    width: 100%;
+    display: flex;
+    margin: 0;
   }
 }
