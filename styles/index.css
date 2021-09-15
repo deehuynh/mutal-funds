@@ -51,11 +51,51 @@ body {
   font-weight: normal;
   cursor: pointer;
 }
-
 @media (max-width: 425px) {
   .top-line {
     display: none;
   }
+}
+
+.header {
+  max-width: 1440px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.header__logo img {
+  width: 29px;
+  height: 29px;
+  margin-right: 13px;
+}
+.header__logo span {
+  font-size: 25.92px;
+  font-family: "FuturaM";
+  color: #222222;
+}
+.header__nav a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 14px;
+  font-family: "AvenirB";
+}
+.header__login a {
+  text-decoration: none;
+  color: #222222;
+  font-size: 14px;
+  font-family: "AvenirH";
 }
 
 /*# sourceMappingURL=index.css.map */

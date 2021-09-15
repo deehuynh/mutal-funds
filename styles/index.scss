@@ -2,6 +2,25 @@
 
 @import url("font.css");
 
+@mixin media (
+  $size,
+  $width: 'max'
+) {
+  @if $width == 'min' {
+    @media (min-width: $size) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $size) {
+      @content;
+    }
+  }
+}
+
+@mixin block ($size) {
+  width: $size;
+  height: $size;
+}
 
 /*  variable  */
 $bg-primary: #E4FAF4;
@@ -63,10 +82,57 @@ body {
       }
     }
   }
+
+  @include media (425px) {
+    display: none;
+  }
 }
 
-@media (max-width: 425px) {
-  .top-line {
-    display: none;
+.header {
+  max-width: 1440px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    img {
+      @include block(29px);
+      margin-right: 13px;
+    }
+
+    span {
+      font-size: 25.92px;
+      font-family: 'FuturaM';
+      color: #222222;
+    }
+  }
+
+  &__nav {
+    a {
+      text-decoration: none;
+      color: #222222;
+      font-size: 14px;
+      font-family: 'AvenirB';
+    }
+  }
+
+  &__login {
+    a {
+      text-decoration: none;
+      color: #222222;
+      font-size: 14px;
+      font-family: 'AvenirH';
+    }
   }
 }
