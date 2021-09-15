@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'AvenirL';
+    src: url('../fonts/Avenir\ Light.ttf');
+}
+
+@font-face {
+    font-family: 'FuturaM';
+    src: url('../fonts/Futura\ Medium.otf');
+}
+
+@font-face {
+    font-family: 'AvenirM';
+    src: url('../fonts//Avenir\ Medium.ttf');
+}

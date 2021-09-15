@@ -1,5 +1,8 @@
 @import url("normalize.css");
 
+@import url("font.css");
+
+
 /*  variable  */
 $bg-primary: #E4FAF4;
 $c-primary: #222222;
@@ -21,6 +24,8 @@ body {
   width: 100%;
   height: 30px;
   background-color: $bg-primary;
+  font-family: 'AvenirM';
+  font-size: 13px;
 
   &__content {
     max-width: 1440px;
@@ -28,5 +33,14 @@ body {
 
     display: flex;
     justify-content: flex-end;
+
+    p:last-child {
+      font-family: 'AvenirL';
+
+      strong {
+        font-family: 'AvenirM';
+        font-weight: normal;
+      }
+    }
   }
 }
