@@ -12,3 +12,28 @@
     font-family: 'AvenirM';
     src: url('../fonts//Avenir\ Medium.ttf');
 }
+
+@font-face {
+    font-family: 'AvenirB';
+    src: url('../fonts//Avenir\ Book.ttf');
+}
+
+@font-face {
+    font-family: 'AvenirH';
+    src: url('../fonts//Avenir\ Heavy.ttf');
+}
+
+@font-face {
+    font-family: 'AvenirR';
+    src: url('../fonts/Avenir\ Roman\ Font\ Download.otf');
+}
+
+@font-face {
+    font-family: 'FuturaB';
+    src: url('../fonts/futura-book-bt-22240.ttf');
+}
+
+@font-face {
+    font-family: 'SFProText';
+    src: url('../fonts//FontsFree-Net-SFProText-Semibold.ttf');
+}

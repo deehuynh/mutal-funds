@@ -15,23 +15,47 @@ body {
 /* --HEADER-- */
 .top-line {
   width: 100%;
-  height: 30px;
+  height: auto;
   background-color: #E4FAF4;
   font-family: "AvenirM";
   font-size: 13px;
 }
 .top-line__content {
   max-width: 1440px;
+  height: 30px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+}
+.top-line__content p {
+  padding: 2px 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-right: 1px solid #D8D8D8;
+}
+.top-line__content p:hover:not(p:last-child) {
+  opacity: 0.6;
 }
 .top-line__content p:last-child {
   font-family: "AvenirL";
+  cursor: default;
+  border-right: none;
+  padding-right: 0;
+}
+.top-line__content p:last-child span:hover {
+  opacity: 0.6;
 }
 .top-line__content p:last-child strong {
   font-family: "AvenirM";
   font-weight: normal;
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .top-line {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
