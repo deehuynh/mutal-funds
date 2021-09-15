@@ -95,6 +95,11 @@ body {
     }
   }
 
+  @include media (1180px) {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
   @include media (425px) {
     display: none;
   }
@@ -217,6 +222,15 @@ body {
     &__search {
       display: none!important;
     }
+
+    margin: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+  }
+
+  @include media (425px) {
+    height: 60px;
   }
 }
 

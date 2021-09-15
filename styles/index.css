@@ -60,6 +60,12 @@ body {
   font-weight: normal;
   cursor: pointer;
 }
+@media (max-width: 1180px) {
+  .top-line {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
 @media (max-width: 425px) {
   .top-line {
     display: none;
@@ -158,8 +164,19 @@ body {
   }
 }
 @media (max-width: 460px) {
+  .header {
+    margin: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  }
   .header__search {
     display: none !important;
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    height: 60px;
   }
 }
 
