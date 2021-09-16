@@ -714,6 +714,10 @@ body {
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
+
+    @include media (1180px) {
+      margin: 0 20px;
+    }
   }
 
   &__col-1 {
@@ -725,6 +729,10 @@ body {
       font-size: 40px;
       font-weight: normal;
       margin: 0;
+
+      @include media (425px) {
+        font-size: 30px;
+      }
     }
 
     p {
@@ -733,6 +741,22 @@ body {
       opacity: .7;
       margin-top: 30px;
       margin-bottom: 50px;
+    }
+
+    @include media (1024px) {
+      width: 80%;
+      margin: {
+        left: auto;
+        right: auto;
+      }
+    }
+
+    @include media (768px) {
+      width: 100%;
+    }
+
+    @include media (600px) {
+      margin-top: 0;
     }
   }
 
@@ -745,10 +769,6 @@ body {
       line-height: 29px;
     }
 
-    &-1, &-2 {
-      width: 50%;
-    }
-
     h2 {
       font-family: 'FuturaMBT';
       font-weight: normal;
@@ -756,9 +776,45 @@ body {
       margin-bottom: 0;
     }
 
+    &-1 {
+      width: 55%;
+    }
+
     &-2 {
+      width: 45%;
       p {
         margin-bottom: 35px;
+      }
+    }
+
+    @include media (1160px) {
+      &-1, &-2 {
+        width: 50%;
+      }
+    }
+
+    @include media (550px) {
+      flex-direction: column;
+      &-1, &-2 {
+        width: 100%;
+      }
+
+      &-2 {
+        margin-top: 70px;
+      }
+
+      p {
+        br {
+          display: none;
+        }
+      }
+    }
+
+    @include media (375px) {
+      p {
+        br.br-b {
+          display: block;
+        }
       }
     }
   }
@@ -768,7 +824,23 @@ body {
     text-align: right;
 
     img {
+      max-width: 100%;
       margin-top: 90px;
+
+      @include media (1160px) {
+        padding-left: 15px;
+        padding-top: 50px;
+        box-sizing: border-box;
+      }
+    }
+
+    @include media (1024px) {
+      display: none;
     }
   }
+
+  @include media (600px) {
+    height: auto;
+    padding: 100px 0;
+  } 
 }
