@@ -438,6 +438,7 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   transition: .3s;
+  user-select: none;
 
   &:hover {
     opacity: .8;
@@ -682,6 +683,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
+  user-select: none;
 
   img {
     margin-left: 7px;
@@ -1213,6 +1215,7 @@ body {
         border: 1px solid #F0F0F0;
         display: flex;
         justify-content: space-between;
+        user-select: none;
       }
     }
 

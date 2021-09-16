@@ -364,6 +364,7 @@ body {
   box-sizing: border-box;
   cursor: pointer;
   transition: 0.3s;
+  user-select: none;
 }
 .button:hover {
   opacity: 0.8;
@@ -579,6 +580,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
+  user-select: none;
 }
 .button-light img {
   margin-left: 7px;
@@ -1044,6 +1046,7 @@ body {
     border: 1px solid #F0F0F0;
     display: flex;
     justify-content: space-between;
+    user-select: none;
   }
   .footer__col-1-1, .footer__col-1-2, .footer__col-1-3 {
     width: 100%;
