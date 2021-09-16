@@ -15,7 +15,7 @@ The project was finished
 
 The sketch file taken from: [https://www.sketchappsources.com/free-source/4188-investment-website-design-sketch-freebie-resource.html](https://www.sketchappsources.com/free-source/4188-investment-website-design-sketch-freebie-resource.html)
 
-![img](blob:https://imgur.com/4924fd57-6617-4601-bad4-35836bf52e63)
+![img](https://i.imgur.com/mFjauvu.png)
 
 ## Live website
 
