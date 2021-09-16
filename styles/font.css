@@ -37,3 +37,8 @@
     font-family: 'SFProText';
     src: url('../fonts//FontsFree-Net-SFProText-Semibold.ttf');
 }
+
+@font-face {
+    font-family: 'FuturaMBT';
+    src: url('../fonts/futura\ medium\ bt.ttf');
+}

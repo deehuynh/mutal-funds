@@ -604,4 +604,46 @@ body {
   }
 }
 
+.row-3rd {
+  height: 850px;
+  background: linear-gradient(180deg, #E4FAF4 -11.78%, #FFFFFF 75.23%);
+}
+.row-3rd__container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+}
+.row-3rd__col-1 {
+  width: 51%;
+  margin-top: 160px;
+}
+.row-3rd__col-1 h1 {
+  font-family: "FuturaM";
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+}
+.row-3rd__col-1 p {
+  font-family: "AvenirL";
+  font-size: 17px;
+  opacity: 0.7;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.row-3rd__content {
+  display: flex;
+}
+.row-3rd__content h2 {
+  font-family: "FuturaMBT";
+  font-weight: normal;
+  margin: 0;
+}
+.row-3rd__col-2 {
+  width: 49%;
+  text-align: right;
+}
+.row-3rd__col-2 img {
+  margin-top: 90px;
+}
+
 /*# sourceMappingURL=index.css.map */

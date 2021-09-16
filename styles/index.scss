@@ -706,3 +706,52 @@ body {
     }
   }
 }
+
+.row-3rd {
+  height: 850px;
+  background: linear-gradient(180deg, #E4FAF4 -11.78%, #FFFFFF 75.23%);
+  &__container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  &__col-1 {
+    width: 51%;
+    margin-top: 160px;
+
+    h1 {
+      font-family: 'FuturaM';
+      font-size: 40px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    p {
+      font-family: 'AvenirL';
+      font-size: 17px;
+      opacity: .7;
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__content {
+    display: flex;
+
+    h2 {
+      font-family: 'FuturaMBT';
+      font-weight: normal;
+      margin: 0;
+    }
+  }
+
+  &__col-2 {
+    width: 49%;
+    text-align: right;
+
+    img {
+      margin-top: 90px;
+    }
+  }
+}
