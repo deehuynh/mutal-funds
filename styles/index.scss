@@ -976,3 +976,46 @@ body {
     padding-bottom: 100px;
   }
 }
+
+.footer {
+  height: 395px;
+
+  &__container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @include media (1180px) {
+      margin: 0 20px;
+    }
+  }
+
+  &__copyright {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    p {
+      font-size: 12px;
+      font-family: 'AvenirB';
+      opacity: .7;
+    }
+  }
+
+  &__social-media {
+    opacity: .7;
+
+    img {
+      margin: 0 12px;
+
+      &:hover {
+        cursor: pointer;
+        opacity: .4;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

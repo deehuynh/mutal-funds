@@ -847,4 +847,41 @@ body {
   }
 }
 
+.footer {
+  height: 395px;
+}
+.footer__container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+@media (max-width: 1180px) {
+  .footer__container {
+    margin: 0 20px;
+  }
+}
+.footer__copyright {
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__copyright p {
+  font-size: 12px;
+  font-family: "AvenirB";
+  opacity: 0.7;
+}
+.footer__social-media {
+  opacity: 0.7;
+}
+.footer__social-media img {
+  margin: 0 12px;
+}
+.footer__social-media img:hover {
+  cursor: pointer;
+  opacity: 0.4;
+}
+.footer__social-media img:last-child {
+  margin-right: 0;
+}
+
 /*# sourceMappingURL=index.css.map */
