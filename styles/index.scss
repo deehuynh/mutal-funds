@@ -562,11 +562,6 @@ body {
     margin: 0 20px;
   }
 
-  @include media (900px) {
-    flex-direction: column-reverse;
-    height: auto;
-  }
-
   &__col-1 {
     width: 55%;
 
@@ -614,6 +609,68 @@ body {
     display: flex;
     align-items: center;
   }
+
+  @include media (900px) {
+    flex-direction: column;
+    height: auto;
+    padding: 70px 0;
+    box-sizing: border-box;
+
+    &__col-1 {
+      width: 100%;
+      margin-bottom: 70px;
+      text-align: center;
+    }
+    
+    &__col-2 {
+      width: 100%;
+      text-align: center;
+
+      p {
+        max-width: 370px;
+        margin: {
+          left: auto;
+          right: auto;
+        }
+      }
+    }
+
+    &__button-group {
+      justify-content: center;
+    }
+  }
+
+  @include media (425px) {
+    &__col-2 {
+      text-align: left;
+      h1 {
+        font-size: 30px;
+      }
+    }
+
+    &__button-group {
+      justify-content: flex-start;
+    }
+  }
+
+  @include media (400px) {
+    &__btn {
+      padding: 13px 28px;
+    }
+  }
+
+  @include media (365px) {
+    &__btn {
+      padding: 10px 25px;
+      font-size: 16px;
+    }
+  }
+
+  @include media (335px) {
+    &__btn {
+      padding: 10px 20px;
+    }
+  }
 }
 
 .button-light {
@@ -632,5 +689,20 @@ body {
 
   &:hover {
     opacity: .6;
+  }
+
+  @include media (400px) {
+    font-size: 17px;
+  }
+
+  @include media (365px) {
+    font-size: 16px;
+    padding: 15px 10px;
+  }
+
+  @include media (335px) {
+    img {
+      @include block(22px);
+    }
   }
 }

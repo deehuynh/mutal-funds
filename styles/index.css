@@ -477,12 +477,6 @@ body {
     margin: 0 20px;
   }
 }
-@media (max-width: 900px) {
-  .row-2nd {
-    flex-direction: column-reverse;
-    height: auto;
-  }
-}
 .row-2nd__col-1 {
   width: 55%;
 }
@@ -523,6 +517,58 @@ body {
   display: flex;
   align-items: center;
 }
+@media (max-width: 900px) {
+  .row-2nd {
+    flex-direction: column;
+    height: auto;
+    padding: 70px 0;
+    box-sizing: border-box;
+  }
+  .row-2nd__col-1 {
+    width: 100%;
+    margin-bottom: 70px;
+    text-align: center;
+  }
+  .row-2nd__col-2 {
+    width: 100%;
+    text-align: center;
+  }
+  .row-2nd__col-2 p {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .row-2nd__button-group {
+    justify-content: center;
+  }
+}
+@media (max-width: 425px) {
+  .row-2nd__col-2 {
+    text-align: left;
+  }
+  .row-2nd__col-2 h1 {
+    font-size: 30px;
+  }
+  .row-2nd__button-group {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 400px) {
+  .row-2nd__btn {
+    padding: 13px 28px;
+  }
+}
+@media (max-width: 365px) {
+  .row-2nd__btn {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 335px) {
+  .row-2nd__btn {
+    padding: 10px 20px;
+  }
+}
 
 .button-light {
   font-family: "AvenirH";
@@ -539,6 +585,23 @@ body {
 }
 .button-light:hover {
   opacity: 0.6;
+}
+@media (max-width: 400px) {
+  .button-light {
+    font-size: 17px;
+  }
+}
+@media (max-width: 365px) {
+  .button-light {
+    font-size: 16px;
+    padding: 15px 10px;
+  }
+}
+@media (max-width: 335px) {
+  .button-light img {
+    width: 22px;
+    height: 22px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
