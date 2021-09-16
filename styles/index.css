@@ -859,6 +859,11 @@ body {
     margin: 0 20px;
   }
 }
+.footer__line {
+  height: 1px;
+  background-color: #222222;
+  opacity: 0.1;
+}
 .footer__copyright {
   height: 42px;
   display: flex;
@@ -882,6 +887,35 @@ body {
 }
 .footer__social-media img:last-child {
   margin-right: 0;
+}
+.footer__content {
+  height: 352px;
+  padding-top: 60px;
+  box-sizing: border-box;
+  display: flex;
+}
+.footer__row-1, .footer__row-2 {
+  display: flex;
+}
+.footer__col-1-1, .footer__col-1-2, .footer__col-1-3, .footer__col-2-1, .footer__col-2-2 {
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  color: #222222;
+  text-decoration: none;
+}
+.footer__logo img {
+  width: 84px;
+  height: 84px;
+}
+.footer__logo span {
+  display: block;
+  font-family: "FuturaM";
+  font-size: 30px;
+  letter-spacing: 4.5px;
 }
 
 /*# sourceMappingURL=index.css.map */
