@@ -844,3 +844,77 @@ body {
     padding: 100px 0;
   } 
 }
+
+.row-4th {
+  position: relative;
+  height: 560px;
+  z-index: 0;
+  text-align: center;
+  padding: {
+    top: 110px;
+    bottom: 55px;
+    left: 15px;
+    right: 15px;
+  };
+  overflow: hidden;
+  box-sizing: border-box;
+
+  h1 {
+    margin: 0;
+    font-family: 'FuturaMBT';
+    font-size: 30px;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-family: 'FuturaMBT';
+    font-weight: normal;
+    margin: {
+      top: 0;
+      bottom: 25px;
+    }
+  }
+
+  p {
+    opacity: .7;
+    line-height: 29px;
+    font-size: 17px;
+    font-family: 'AvenirL';
+    margin: {
+      top: 20px;
+      bottom: 50px;
+    }
+  }
+
+  &__bg {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  &__button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      cursor: pointer;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    img:first-child {
+      margin-right: 30px;
+    }
+  }
+
+  @include media (1024px) {
+    padding-top: 0;
+    height: auto;
+    padding-bottom: 150px;
+  }
+}

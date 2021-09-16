@@ -731,4 +731,65 @@ body {
   }
 }
 
+.row-4th {
+  position: relative;
+  height: 560px;
+  z-index: 0;
+  text-align: center;
+  padding-top: 110px;
+  padding-bottom: 55px;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.row-4th h1 {
+  margin: 0;
+  font-family: "FuturaMBT";
+  font-size: 30px;
+  font-weight: normal;
+}
+.row-4th h2 {
+  font-family: "FuturaMBT";
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.row-4th p {
+  opacity: 0.7;
+  line-height: 29px;
+  font-size: 17px;
+  font-family: "AvenirL";
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.row-4th__bg {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.row-4th__button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row-4th__button-group img {
+  cursor: pointer;
+}
+.row-4th__button-group img:hover {
+  opacity: 0.7;
+}
+.row-4th__button-group img:first-child {
+  margin-right: 30px;
+}
+@media (max-width: 1024px) {
+  .row-4th {
+    padding-top: 0;
+    height: auto;
+    padding-bottom: 150px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
