@@ -8,7 +8,7 @@ The project was finished
 
 ## Skills
 
-* Convert Sketch to a reactjs application
+* Convert Sketch to HTML
 * Responsive
 
 ## Sketch Web UI Design
