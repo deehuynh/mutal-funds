@@ -847,7 +847,7 @@ body {
 
 .row-4th {
   position: relative;
-  height: 560px;
+  height: 510px;
   z-index: 0;
   text-align: center;
   padding: {
@@ -884,14 +884,35 @@ body {
       top: 20px;
       bottom: 50px;
     }
+
+    @include media (425px) {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 105px;
+    right: 180px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .7;
+    }
   }
 
   &__bg {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -50px;
     z-index: -1;
+
+    @include media (425px) {
+      width: 1140px;
+    }
   }
 
   &__button-group {
@@ -905,10 +926,24 @@ body {
       &:hover {
         opacity: .7;
       }
+
+      @include media (375px) {
+        width: 140px;
+      }
     }
 
     img:first-child {
       margin-right: 30px;
+
+      @include media (375px) {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  @include media (1200px) {
+    &__btn {
+      right: 100px;
     }
   }
 
@@ -916,5 +951,28 @@ body {
     padding-top: 0;
     height: auto;
     padding-bottom: 150px;
+
+    &__bg {
+      bottom: 0px;
+    }
+
+    &__btn {
+      right: 20px;
+    }
+  }
+
+  @include media (600px) {
+    &__btn {
+      right: 0;
+      bottom: 20px;
+    }
+  }
+
+  @include media (425px) {
+    &__btn {
+      right: 0;
+      bottom: 0px;
+    }
+    padding-bottom: 100px;
   }
 }
